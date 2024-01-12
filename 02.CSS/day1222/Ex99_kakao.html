@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_kakao</title>
+</head>
+    <style>
+         div{
+            border: 1px solid hidden;
+        }
+       #main{ border: 1px solid hidden;
+              width: 600px ; 
+              margin: auto;
+              padding: 10px;}
+        h1 { text-align: center;}
+        #top { border: 1px solid hidden;}     
+        #middle { border: 1px solid gray;
+                  padding: 50px 20px;}   
+        #pass{
+             /* border: 1px solid ; */
+                width: 350px;
+                margin: auto;
+                margin-bottom: 100px;}
+        #btn{ 
+            /* border: 1px solid blue; */
+                width: 350px;
+                margin: auto;
+                text-align: center;}
+        .tag{ width: 350px;
+              padding: 0px ; 
+              /* border-bottom:5px ; */
+              border-top: 0px ;
+              border-left: 0px ;
+              border-right: 0px ;
+              height: 50px;
+              font-size: large;}
+        .tag:focus { outline: none;}
+        .tag::placeholder { font-size: large;}
+        #log { width: 350px;
+               background-color: rgb(253,228,0);
+               font-size: 15px;
+               padding: 20px;
+               margin-bottom: 20px;
+               border: 0px;
+               border-radius: 10px;}
+    .ddo {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.35);
+        font-size: 12px;
+        margin: 8px -15px;
+      }
+      .ddo::before,
+      .ddo::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 16px;
+      }
+        #QR { background-color: rgb(51,51,51);
+                color: white;
+                width: 310px; 
+                padding: 20px;
+                font-size: 15px;
+                letter-spacing: 1px;
+                border-radius: 8px;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                font-weight: bold;
+                margin-bottom: 20px;
+                }
+        #joindiv { 
+            /* border: 1px solid blue; */
+            width: 350px;
+            margin: auto;
+        }
+        .joinTag { 
+            text-decoration: none;
+            color: black;
+        }
+        .padding100 { padding-left: 100px;}
+    </style>
+<body>
+    <div id="main">
+        <div id="top" >
+    <h1>kakao</h1>
+        </div>
+        <div id="middle">
+            <div id="pass">
+            <input type="text" class="tag" placeholder="카카오메일 아이디, 이메일, 전화번호"/>
+            <br/>
+            <input type="password" class="tag" placeholder="비밀번호"/>
+        </div>
+            <br/>
+        <div id="btn">
+            <button type="button" id="log">로그인</button>
+            <br/>
+            <div class="ddo">또는</div>
+            <br/>
+            <a href="#" id="QR">QR코드 로그인</a>
+        </div>
+        <div id="joindiv">
+            <a href="#" class="joinTag">회원가입</a>
+            <a href="#" class="joinTag padding100" >계정 찾기</a>
+            <a href="#" class="joinTag">비밀번호 찾기</a>
+        </div>
+        </div>
+        <div id="bottom">
+            하단메뉴
+        </div>
+</div>
+</body>
+</html>

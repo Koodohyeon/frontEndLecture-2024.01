@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2.html</title>
+</head>
+<body>
+    <form> 
+        <fieldset>
+       <legend>로그인 정보 </legend>
+       <ol> 
+        
+        <li> 아이디 <input type="text" >  </li>
+        <form name="join">
+      <li>  비밀번호 : <input type="password" id="password1"> </li>
+       <li> 비밀번호확인 : <input type="password" id="password2"></li>
+        </form>
+       <li> 회원 등급 <input type="text" value="준회원"  />  </li>
+        </fieldset>
+    </ol>
+    </form>
+    <form id="myform" action="#"> 
+        <fieldset>
+       <legend>개인 정보 </legend> 
+       <ol> 
+        <li>
+    이름 <input type="text" placeholder="5자미만 공백없이"  /> </li>
+            
+       <li> 메일 주소 <input type="email" id="email" placeholder="abcd@domain.com"> </li>
+       <li> 연락처 <input type="text" pattern="(010|011)-\d{3,4}-\d{4}" > </li>
+       <li> 생일 <input type="date" value="연도-월-일"> </li>
+       </ol>
+        </fieldset>
+        <fieldset>
+            <legend>코딩 숙련도(상,중,하) </legend>
+         <ol>
+            <li><input type="range" min="0" max="100" value="60" list="markers"> </li>
+         <datalist id="markers">
+              <option value="20"></option>
+              <option value="50"></option>
+              <option value="80"></option>
+</datalist>
+</ol>
+</fieldset>
+<fieldset>
+    <input type="submit" value="제출" />
+</fieldset>
+    </form>
+<hr>
+ 
+<script>
+    document.querySelector("#myform").addEventListener("submit", function(e){ 
+
+    var email = document.querySelector("#email");
+    var isValidate = false;
+    var regexp =/[a-z]+[a-z0-9]*\.?[a-z0-9]*@[a-z0-9]+\.?[a-z0-9]*/i;
+
+    if(!regexp.test(email.value)){
+        alert("이메일 형식이 다릅니다.");
+    }
+
+    });
+</script>
+</body>
+</html>

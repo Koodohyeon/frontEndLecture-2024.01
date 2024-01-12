@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #qwe {
+        margin: auto;
+        text-align: center;
+    }
+    a{
+            text-decoration: none;
+        }
+    #email {
+                width: 150px; 
+                height: 50px; 
+                padding: 10px 200px;
+                font-size: 15px;
+                font-weight: bolder;
+                text-align: center ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;}
+    #log { background-color: yellow;
+                color: black;
+                width: 150px; 
+                height: 50px; 
+                padding: 10px 200px;
+                font-size: 15px;
+                font-weight: bolder;
+                text-align: center ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;}
+    #QR { background-color: gray;
+                color: black;
+                width: 150px; 
+                height: 50px; 
+                padding: 10px 200px;
+                font-size: 15px;
+                font-weight: bolder;
+                text-align: center ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;}
+#ga{
+    border: hidden;
+
+    margin-left: 40px;
+    width: 150px; }
+ /* #ga2, #ga3, #ga4{
+    border: hidden;
+
+    margin-right: 40px;
+    width: 150px; } */
+    .hr-sect {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.35);
+        font-size: 12px;
+        margin: auto;
+        width: 700px;
+      }
+      .hr-sect::before,
+      .hr-sect::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 25px;
+        
+
+      }
+</style>
+<body>
+    <div>
+    <h3 id="qwe">kakao</h3>
+    </div>
+    <br/>
+    <div style=" border: 1px solid gray;" >
+        <input type="email" id="email" placeholder="카카오메일 아이디, 이메일, 전화번호" required />
+        <br/>
+        <input type="password" id="pass" placeholder="비밀번호"/>
+        <br/><br/><br/><br/>
+        <a id="log" class="log" href="#3"> 로그인 </a>
+    <br><br>
+    <div class="hr-sect">또는</div> <br>
+    <a id="QR" href="#4"> QR코드 로그인 </a> <br/><br/><br/>
+
+
+    <a href="#" id="ga" >회원가입</a>
+    <a href="#" id="ga2" >계정 찾기</a>
+    <a href="#" id="ga3" >|</a>
+    <a href="#" id="ga4" >비밀번호 찾기</a>
+</div>
+
+
+</body>
+</html>
