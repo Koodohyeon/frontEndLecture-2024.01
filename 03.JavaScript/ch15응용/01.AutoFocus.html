@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-       /*  window.onload = function() {
+        window.onload = function() {
             let input1 = document.querySelectorAll('input')[0];
             let input2 = document.querySelectorAll('input')[1];
 
@@ -17,20 +17,7 @@
                 if (e.keyCode == 8 && input2.value.length == 0) // e.keyCode == 8 은 백스페이스를 의미한다.
                     input1.focus();
             }
-        } */
-        $(document).ready(() => {
-            let input1 = $('input'.get(0));
-            let input2 = $('input'.get(1));
-
-            $(input1).on('keyup', function(e) {
-                if ($(this).val().length >= 6)
-                    $('#input2').focus();
-            });
-            $(input2).on('keyup', function(e) {
-                if (e.keyCode == 8 && $(this).val().length == 0)
-                    $('#input1').focus();
-            });         
-        })
+        }
     </script>
 </head>
 <body style="margin: 50px;">
